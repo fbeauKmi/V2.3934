@@ -79,7 +79,7 @@ module fan_grid(
         difference(){
             fan_frame(cover_size=cover_size,corner_r=corner_r,cover_h=cover_h);
             screw_holes(screw_pos=screw_pos,screw_hole_dia=screw_hole_dia);
-            if(skirt_version=="R2") rear_pockets(screw_pos=screw_pos,r=corner_r,model=model);
+            if(skirt_version!="R1") rear_pockets(screw_pos=screw_pos,r=corner_r,model=model);
         }
 
         if($v24){
