@@ -38,6 +38,7 @@ line_width= 0.8; //[0.4:0.01:2]
 // only for Honeycomb, Triangle & Diamond
 variable_line_width = 0; //[-1:0.1:1]
 
+skirt_version= "R2"; //[R1,R2]
 //-------------------//
 $variable_hole=variable_line_width;
 
@@ -48,7 +49,8 @@ fan_grid(
     hole_dia=hole_dia,
     line_width=line_width,
     logo = Logo,
-    pattern_angle=Pattern_angle
+    pattern_angle=Pattern_angle,
+    skirt_version=skirt_version
     );
 
 
@@ -58,7 +60,8 @@ module fan_grid(
                 hole_dia = 9,
                 line_width = 0.8,
                 logo= "none",
-                pattern_angle=120){
+                pattern_angle=120,
+                skirt_version="R2"){
                     
     cover_size = 60;
     screw_hole_distance = 50.38;
@@ -76,7 +79,7 @@ module fan_grid(
         difference(){
             fan_frame(cover_size=cover_size,corner_r=corner_r,cover_h=cover_h);
             screw_holes(screw_pos=screw_pos,screw_hole_dia=screw_hole_dia);
-            rear_pockets(screw_pos=screw_pos,r=corner_r,model=model);
+            if(skirt_version=="R2") rear_pockets(screw_pos=screw_pos,r=corner_r,model=model);
         }
 
         if($v24){
