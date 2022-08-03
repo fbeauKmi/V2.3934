@@ -215,13 +215,13 @@ module grid_area(size){
     }
 }
 
-module pattern_v24(size){    
+module pattern_v24(size, angle=0){    
     offset(r=2,$fn=10) offset(r=-2,$fn=15)
     difference(){
         circle(d=size-2.4, $fn=ceil(size));
-        circle(d=30, $fn=6);
+        rotate(30) circle(d=30, $fn=6);
         for(i = [0:2]){
-            rotate(30+ i*60) square([3,size+5],center=true);
+            rotate( angle + i*60) square([3,size+5],center=true);
         }
     }   
 }
