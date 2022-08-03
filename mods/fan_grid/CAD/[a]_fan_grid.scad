@@ -14,6 +14,8 @@
  * V1.2:
  *      - New pattern
  *      - fixes file name suggestion
+ * V1.3:
+ *      - Add R1_blank model
  * --------------
  *
  * This work is licensed under the Creative Commons - Attribution - Non-Commercial - ShareAlike license.
@@ -27,7 +29,7 @@
 /* [Fan grid settings] */
 
 // Part A or B or R1 version(determine rear pocket side)
-Part = "A"; //[A,B,R1]
+Part = "A"; //[A,B,R1,R1_blank]
 Pattern_model = "Honeycomb"; //[V2.4,V2.4_rings,V2.4_interpolate,Honeycomb,HoneyLogo,Triangle,Diamond]
 // Logo model (does not affect V2.4s & HoneyLogo model) 
 Logo = "Voron"; //[Voron,Voron2,none]
@@ -76,13 +78,17 @@ module fan_grid(
     size_logo=18.1;
     $v24=startWith(grid_pattern,"V2.4");
     $special=grid_pattern=="HoneyLogo";
+    
         
     intersection(){
         difference(){
             fan_frame(cover_size=cover_size,corner_r=corner_r,cover_h=cover_h);
-            screw_holes(screw_pos=screw_pos,screw_hole_dia=screw_hole_dia);
-            if(model!="R1") rear_pockets(screw_pos=screw_pos,r=corner_r,model=model);
+            if(!startWith(model,"R1_blank"))screw_holes(screw_pos=screw_pos,screw_hole_dia=screw_hole_dia);
+            if(!startWith(model,"R1")) rear_pockets(screw_pos=screw_pos,r=corner_r,model=model);
         }
+        
+            
+        
 
         if($v24){
             chamfer(h=0.4,height=cover_h, pos="bottom")
@@ -149,7 +155,8 @@ module fan_grid(
             if(logo == "Voron2") chamfer(h=.4,height=cover_h/2) pattern_logovoron2(size=size_logo*1.75);
         }   
     }
-
+    if(startWith(model,"R1_blank")) r1_height(cover_size=cover_size,corner_r=corner_r,cover_h=cover_h);
+    
     echo ("Rename our STL :");
     $exported_filename= str("[a]_fan_grid_" , model , "_", grid_pattern,
     (grid_pattern=="V2.4" || grid_pattern=="HoneyLogo" ?"":
@@ -171,10 +178,29 @@ module fan_frame(cover_size,corner_r,cover_h){
             }
         }     
     }
-    if($v24){
+   if($v24){
         linear_extrude(height=cover_h) circle(d=cover_size, $fn=ceil(cover_size*2));
     }
+    
  }
+ 
+module r1_height(cover_size,corner_r,cover_h,height=20){
+    translate([0,0,cover_h-0.05])
+    linear_extrude(height=height-cover_h+0.05){
+        difference(){
+            offset(r=corner_r, $fn = 32) {
+                offset(r=-corner_r) {
+                    square([cover_size, cover_size], center = true);
+                }
+            }
+            offset(r=corner_r-1.6, $fn = 32) {
+                offset(r=-corner_r+1.6) {
+                    square(cover_size-3.2, center = true);
+                }
+            }
+        }
+    }
+}
 
 //## 2D modules
 module grid_area(size){
