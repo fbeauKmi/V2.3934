@@ -9,6 +9,11 @@
  * --------------
  * v1.0:
  *      - first release
+ * V1.1:
+ *      - Add R1 version
+ * V1.2:
+ *      - New pattern
+ *      - fixes file name suggestion
  * --------------
  *
  * This work is licensed under the Creative Commons - Attribution - Non-Commercial - ShareAlike license.
@@ -21,9 +26,9 @@
 
 /* [Fan grid settings] */
 
-// Part A or B (determine rear pocket side)
-Part = "A"; //[A,B]
-Pattern_model = "Honeycomb"; //[V2.4,V2.4_rings,Honeycomb,HoneyLogo,Triangle,Diamond]
+// Part A or B or R1 version(determine rear pocket side)
+Part = "A"; //[A,B,R1]
+Pattern_model = "Honeycomb"; //[V2.4,V2.4_rings,V2.4_interpolate,Honeycomb,HoneyLogo,Triangle,Diamond]
 // Logo model (does not affect V2.4s & HoneyLogo model) 
 Logo = "Voron"; //[Voron,Voron2,none]
 // Rotate grid pattern
@@ -34,11 +39,10 @@ hole_dia = 9; //[5:0.1:12]
 // grid wall min width in mm
 line_width= 0.8; //[0.4:0.01:2]
 
-// change hole size  f(center distance)
+// change hole size  f(center distance) /
 // only for Honeycomb, Triangle & Diamond
 variable_line_width = 0; //[-1:0.1:1]
 
-skirt_version= "R2"; //[R1,R2]
 //-------------------//
 $variable_hole=variable_line_width;
 
@@ -49,8 +53,7 @@ fan_grid(
     hole_dia=hole_dia,
     line_width=line_width,
     logo = Logo,
-    pattern_angle=Pattern_angle,
-    skirt_version=skirt_version
+    pattern_angle=Pattern_angle
     );
 
 
@@ -60,8 +63,7 @@ module fan_grid(
                 hole_dia = 9,
                 line_width = 0.8,
                 logo= "none",
-                pattern_angle=120,
-                skirt_version="R2"){
+                pattern_angle=120){
                     
     cover_size = 60;
     screw_hole_distance = 50.38;
@@ -72,14 +74,14 @@ module fan_grid(
     screw_pos = (cover_size - corner_size) / 2;
     
     size_logo=18.1;
-    $v24=grid_pattern=="V2.4" || grid_pattern=="V2.4_rings" ;;
+    $v24=startWith(grid_pattern,"V2.4");
     $special=grid_pattern=="HoneyLogo";
         
     intersection(){
         difference(){
             fan_frame(cover_size=cover_size,corner_r=corner_r,cover_h=cover_h);
             screw_holes(screw_pos=screw_pos,screw_hole_dia=screw_hole_dia);
-            if(skirt_version!="R1") rear_pockets(screw_pos=screw_pos,r=corner_r,model=model);
+            if(model!="R1") rear_pockets(screw_pos=screw_pos,r=corner_r,model=model);
         }
 
         if($v24){
@@ -93,7 +95,11 @@ module fan_grid(
 
             if (grid_pattern=="V2.4_rings"){
                 linear_extrude(height=cover_h-1.6,convexity=50)
-                    pattern_circle(size=cover_size,hole_dia=hole_dia,line_width=line_width);
+                    pattern_circle(size1=25, size2=cover_size-line_width,hole_dia=hole_dia,line_width=line_width, nb_lines=3);
+            }
+            if (grid_pattern=="V2.4_interpolate"){
+                linear_extrude(height=cover_h-1.6,convexity=50)
+                    pattern_interpolate_lines(size1=12.5+ line_width, size2=(cover_size-line_width)/2,line_width=line_width,nb_lines=3);
             }
             
         } else if($special){
@@ -143,18 +149,19 @@ module fan_grid(
             if(logo == "Voron2") chamfer(h=.4,height=cover_h/2) pattern_logovoron2(size=size_logo*1.75);
         }   
     }
-        
-    
-    
+
     echo ("Rename our STL :");
-    echo(str("[a]_fan_grid_" , model , (grid_pattern=="V2.4"?"":str("_" ,
-    grid_pattern, (pattern_angle > 0? str("_A",pattern_angle):"") ,
+    $exported_filename= str("[a]_fan_grid_" , model , "_", grid_pattern,
+    (grid_pattern=="V2.4" || grid_pattern=="HoneyLogo" ?"":
+        str(  
+        startWith(grid_pattern,"V2.4")?str("_L",line_width<1?join(slice(str(line_width),1)):line_width): str(
+    (logo!= "none"? str("_" , logo) :""),
+    (pattern_angle > 0? str("_A",pattern_angle):"") ,
     "_H" , (len(str(hole_dia))<3?str(hole_dia,".0"):hole_dia), 
     "_L" , (line_width<1?join(slice(str(line_width),1)):line_width) ,
-    $variable_hole != 0 ? str("_" , $variable_hole):"")), ".stl"));
+    $variable_hole != 0 ? str("_V" , $variable_hole):""))), ".stl");
+    echo($exported_filename);
 }
-
-
 
 module fan_frame(cover_size,corner_r,cover_h){
     chamfer(h=1,height=cover_h,pos="bottom") {
@@ -193,20 +200,42 @@ module pattern_v24(size){
     }   
 }
 
-module pattern_circle(size, hole_dia, line_width){
-    n = ceil((size-25)/(hole_dia+line_width));
-    for( i = [1:n]){
-        intersection(){
-            grid_area(size);
+module pattern_circle(size1,size2, hole_dia, line_width, nb_lines=2){
+    e=(size2-size1)/(nb_lines+1)/2;
+    echo("Circles");
+    for( i = [1:nb_lines]){
             difference(){
-                d1=25 + hole_dia * i;
-                d2=d1 + 2 * line_width;
-                circle(d=d2,$fn=ceil(d2 * 4));
-                circle(d=d1,$fn=ceil(d2 * 4));
+                d1= size1/2 + e * i -line_width/2;
+                d2=d1 + line_width;
+                circle(r=d2,$fn=ceil(d2 * 4));
+                circle(r=d1,$fn=ceil(d2 * 4));
             }
-        }
     }  
 }
+
+module pattern_interpolate_lines(size1, size2, line_width, nb_lines=1){
+    e=1/(nb_lines+1);
+    hw = line_width/2;
+    for(n=[1:nb_lines]){
+        g=e*n;
+        
+        f=1-g;
+            
+        d1 = [for(i =[0:59]) 
+                let(a=i*6, l=(0.866/cos(a%60-30)*size1*g+size2*f))
+                [cos(a)*(l-hw),sin(a)*(l-hw)]];
+        d2 = [for(i =[0:59]) 
+                let(a=i*6, l=(0.866/cos(a%60-30)*size1*g+size2*f))
+                [cos(a)*(l+hw),sin(a)*(l+hw)]];
+            
+     
+        difference(){
+            polygon(points=d2);
+            polygon(points=d1);
+        }
+    }
+}
+
 
 module pattern_honeycomb(size, hole_dia, line_width){
     x_dist = hole_dia * 0.866 + line_width;
@@ -293,7 +322,6 @@ module pattern_special(size, line_width){
       }
   }   
 }
-
 
 module pattern_logovoron(size){
     scale(size/52)
@@ -453,3 +481,10 @@ function _join(strings, index, delimeter) =
 	index==0 ? 
 		strings[index] 
 	: str(_join(strings, index-1, delimeter), delimeter, strings[index]) ;
+
+function startWith(string, pattern) =
+        len(string)<len(pattern)?
+            false
+        : [for (i=[0:len(pattern)-1]) string[i]] == [for (i=[0:len(pattern)-1]) pattern[i]]?
+            true
+        : false;
