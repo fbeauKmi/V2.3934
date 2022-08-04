@@ -37,3 +37,10 @@ _only for Honeycomb, Triangle & Diamond_
 
 The Log window show the advised filename , copy it
 Once done render the CAD (F6) then export to STL (F7) whith advised filename
+
+## Acknowledgements ##
+
+Current file was inspired by [Customizable fan grill cover](https://www.thingiverse.com/thing:2802474) by Dennis Hofmann
+and Voron 2.4 [fan grill design](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Skirts/%5Ba%5D_fan_grill_a_x2.stl)
+
+The file partly uses [strings.scad](https://github.com/davidson16807/relativity.scad) by Carl Davidson
