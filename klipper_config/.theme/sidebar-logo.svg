@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="sidebar-logo.svg"
+   id="svg34"
+   version="1.1"
+   viewBox="0 0 40.8 46.98802153517006"
+   height="46.98802153517006mm"
+   width="40.8mm">
+  <metadata
+     id="metadata40">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs38" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg34"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="105.51085"
+     inkscape:cx="77.102361"
+     inkscape:zoom="4.7862375"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     showgrid="false"
+     id="namedview36"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     transform="scale(0.26458333)"
+     d="M 77.101562 1.5117188 L 1.5117188 45.154297 L 1.5117188 132.43945 L 77.101562 176.08008 L 152.69336 132.43945 L 152.69336 45.154297 L 77.101562 1.5117188 z M 40.818359 40.417969 L 65.007812 40.417969 L 40.818359 88.796875 L 16.630859 88.796875 L 40.818359 40.417969 z M 89.197266 40.417969 L 113.38672 40.417969 L 65.007812 137.17383 L 40.818359 137.17383 L 89.197266 40.417969 z M 113.38672 88.796875 L 137.57422 88.796875 L 113.38672 137.17383 L 89.197266 137.17383 L 113.38672 88.796875 z "
+     style="fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.32283;stroke-miterlimit:4;stroke-dasharray:none;fill:#ff8000"
+     id="Sketch001_w0000" />
+</svg>
