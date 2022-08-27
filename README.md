@@ -16,7 +16,7 @@ Some are inspired by : Falcon14141, elpopo_eng, Ette
 Comments on printer.cfg link the authors or source of inspiration.  
 
 Only one script is an original idea (no the best) :
-- db_filament.cfg  (previously material.cfg) (filament management, store parameters et apply it: _eg. pressure_advance, extrude_factor..._ )
+- [db_filament.cfg](./klipper_config/macros/helpers/db_filament.cfg)  (previously material.cfg) (filament management, store parameters et apply it: _eg. pressure_advance, extrude_factor..._ )
 Those parameters are called from print_start, calibration macros, ...  
 
 Many thanks to the voron french community #honhonbaguette.
