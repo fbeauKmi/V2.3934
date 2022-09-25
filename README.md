@@ -7,17 +7,6 @@ For now the printer is almost stock except:
 - 24v warm/cold leds for caselight
 - rama pinned front idlers
 
-### 25/09/2022 : first Upgrade ###
-
-- XY pinned mod
-- GE5C Z-joint
-- Stealthburner
-- X Y endstop relocation
-- LGX lite with 2 part PCB
-- Filament runout sensor by Tircown
-
-![Voron 2.4 v2.3934](./Images/v2.3934.jpg)
-
 DO NOT take this configuration for your printer without checking the configuration. As new features are frequently experimented, some macros can be difficult to extract and adapt to another printer. 
 
 ## Klipper config ##
