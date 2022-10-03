@@ -41,16 +41,20 @@ Comments on printer.cfg link the authors or source of inspiration.
 Those parameters are called from print_start, calibration macros, ...
 
 ### Recently added : ###
+- Separate config file for hotends and extruders, add max_flow check for PRESSURE_NOZZLE and PRIME_LINE
+- [chamber.cfg](./klipper_config/macros/heating/chamber.cfg)
+Wait chamber to reach target temperature. Async mode
 - [inconsistent_test](./klipper_config/macros/calibration/inconsistent_test.cfg): 
 Print a 1 wall spiralized trapezoid, to check extruder issue see https://mihaidesigns.com/pages/inconsistent-extrusion-test
 - [bedsoak.cfg](./klipper_config/macros/heating/bedsoak.cfg) 
-Main feature is to evaluate smoothed derivative of heater_bed power to determine end of bed soak. to do so it use quadratic first derivative polynomial filter from [Savitzky-Golay](https://en.wikipedia.org/wiki/Savitzky%E2%80%93Golay_filter). Once bed power is stable print can start. 
+Main feature is to evaluate smoothed derivative of heater_bed power to determine end of bed soak. to do so it use quadratic first derivative polynomial filter from [Savitzky-Golay](https://en.wikipedia.org/wiki/Savitzky%E2%80%93Golay_filter). Once bed power is stable print can start.
+
 
 Why quadratic ? Because convolution factors are quite easy to compute. I also tried cubic ones, but it produces sometimes inflexion values that yield to unwanted results.
 It's asynchronous macro. that let you interact with printer during soak (even interrupt manualy bed soak) when called from a file
 
 ### To do ###
-- Add async mode to chamber soak, nozzle heat.
+- Add async mode to nozzle heat.
 - Add more configuration macros
 
 
