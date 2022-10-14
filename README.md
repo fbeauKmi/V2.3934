@@ -41,6 +41,7 @@ Comments on printer.cfg link the authors or source of inspiration.
 Those parameters are called from print_start, calibration macros, ...
 
 ### Recently added : ###
+- [max_flow.cfg](./klipper_config/macros/calibration/max_flow.cfg) a macro to check max_flow with a filament_motion_sensor or ERCF
 - Separate config file for hotends and extruders, add max_flow check for PRESSURE_NOZZLE and PRIME_LINE
 - [chamber.cfg](./klipper_config/macros/heating/chamber.cfg)
 Wait chamber to reach target temperature. Async mode
@@ -51,18 +52,15 @@ Main feature is to evaluate smoothed derivative of heater_bed power to determine
 
 
 Why quadratic ? Because convolution factors are quite easy to compute. I also tried cubic ones, but it produces sometimes inflexion values that yield to unwanted results.
-It's asynchronous macro. that let you interact with printer during soak (even interrupt manualy bed soak) when called from a file
+It's asynchronous macro. that let you interact with printer during soak (even interrupt manualy bed soak) when called from a file.
+Original idea came from French channel on Discord Voron Design.  
 
 ### To do ###
 - Add async mode to nozzle heat.
 - Add more configuration macros
 
-
-
-Original idea came from French channel on Discord Voron Design.  
-
 Many thanks to the voron french community #honhonbaguette.
 
 Feel free to use, share, modify this files for your need as long as you respect License from their respective authors
 
-Let me know if there is mistakes, errors or omission. 
+Let me know if there is mistakes, errors or omissions. 
