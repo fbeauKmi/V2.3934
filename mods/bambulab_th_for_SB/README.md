@@ -16,6 +16,7 @@ The cables are pretty short.
 
 ## This mod vs MrTelip version ##
 
+- Fix screw holes position 
 - Revert toolhead (back/front) to optimize cable length 
 - Add a cable path
 - Add coding in toolhead holder
