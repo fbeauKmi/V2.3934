@@ -21,7 +21,7 @@ The cables are pretty short.
 - Add coding in toolhead holder
 - TAP complient
 
-## BOM ##
+## Bill of Materials ##
 
 
 |Category|Qty|Description|Notes|
@@ -29,6 +29,7 @@ The cables are pretty short.
 |Hardware|4|M3 Heatset Insert|Standard Voron spec 4.7 mm diameter inserts|
 |Hardware|2|M3 nut|DIN562 (square)|
 |Hardware|1|Bambulab Toolhead||
+|Hardware|2|Bambulab Toolhead screw||
 |Hardware|1|Bambulab Heater||
 |Hardware|1|Bambulab thermistor||
 |Hardware|1|Bambulab sock||
