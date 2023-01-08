@@ -5,6 +5,18 @@ No need to explain, all is in the title.
 
 Based on [Voron Stealthburner for Bambu Lab X1C/X1 Hotend by MrTelip](https://www.printables.com/fr/model/323196-voron-stealthburner-for-bambu-lab-x1cx1-hotend)
 
+## Update 08/01/2023 ##
+A user report problems with square nuts thicker than the DIN562, so I made a version for this.
+
+3 possibilities :
+|Nuts thickness|parts to print|
+|:----|:----|
+| <1.8 mm|[[a]_SB_bambulab_TH_holder_r3.stl](./STLs/[a]_SB_bambulab_TH_holder_r3.stl)  <br/>[SB_bambulab_TH_front_r2.stl](./STLs/SB_bambulab_TH_Front_r2.stl) <br/>[SB_bambulab_TH_rear_CW2_r2.stl](./STLs/SB_bambulab_TH_rear_CW2_r2.stl)|
+| <2.4 mm|[[a]_SB_bambulab_TH_holder_r3.stl](./STLs/[a]_SB_bambulab_TH_holder_r3.stl)  <br/>[SB_bambulab_TH_front_TN.stl](./STLs/SB_bambulab_TH_Front_TN.stl) <br/>[SB_bambulab_TH_rear_CW2_TN.stl](./STLs/SB_bambulab_TH_rear_CW2_TN.stl)|
+| <2.8 mm|[[a]_SB_bambulab_TH_holder_r3_TN.stl](./STLs/[a]_SB_bambulab_TH_holder_r3_TN.stl)  <br/>[SB_bambulab_TH_front_TN.stl](./STLs/SB_bambulab_TH_Front_TN.stl) <br/>[SB_bambulab_TH_rear_CW2_TN.stl](./STLs/SB_bambulab_TH_rear_CW2_TN.stl)|
+
+New clearance.
+![Clearance for M3 square nut](./images/thicker_nut_holder.png)
 
 ## But Why ?? ##
 
