@@ -23,7 +23,7 @@ A user report problems with square nuts thicker than the DIN562, so I made a ver
 
 |Nuts thickness|Screws|Hotend|parts to print|
 |:----|:----|:-|:-|
-| <1.8 mm|BBL screws **only**|Original BBL<br/>Clone|[[a]_SB_bambulab_TH_holder_r6.stl](./STLs/[a]_SB_bambulab_TH_holder_r6.stl)  <br/>[SB_bambulab_TH_front_r3.stl](./STLs/SB_Bambulab_TH_front_r3.stl) <br/>[SB_bambulab_TH_rear_CW2_r3.stl](./STLs/SB_Bambulab_TH_rear%20CW2_r3.stl)|
+| <1.8 mm|BBL screws **only**|Original BBL<br/>Clone|[[a]_SB_bambulab_TH_holder_r6.stl](./STLs/[a]_SB_bambulab_TH_holder_r6.stl)  <br/>[SB_bambulab_TH_front_r3.stl](./STLs/SB_Bambulab_TH_front_r3.stl) <br/>[SB_bambulab_TH_rear_CW2_r3.stl](./STLs/SB_Bambulab_TH_rear_CW2_r3.stl)|
 | <2.4 mm|M3x16 SHCS|Original BBL<br/>Clone|[[a]_SB_bambulab_TH_holder_r6.stl](./STLs/[a]_SB_bambulab_TH_holder_r6.stl)  <br/>[SB_bambulab_TH_front_clone.stl](./STLs/SB_Bambulab_TH_front_clone.stl) <br/>[SB_bambulab_TH_rear_CW2_clone.stl](./STLs/SB_Bambulab_TH_rear_CW2_clone.stl)|
 |<2.4 mm|M3x16 SHCS|Clone + V6 standard nozzle|[[a]_SB_bambulab_TH_holder_r6_2mm](./STLs/[a]_SB_bambulab_TH_holder_r6_2mm.stl)  <br/>[SB_bambulab_TH_front_clone_2mm.stl](./STLs/SB_Bambulab_TH_front_clone_2mm.stl) <br/>[SB_bambulab_TH_rear_CW2_clone_2mm.stl](./STLs/SB_Bambulab_TH_rear_CW2_clone_2mm.stl)|
 
