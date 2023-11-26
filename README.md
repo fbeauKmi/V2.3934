@@ -44,7 +44,7 @@ PRINT_START SIZE={first_layer_print_min[0]}_{first_layer_print_min[1]}_{first_la
 Comments on printer.cfg link the authors or source of inspiration.  
 
 ### Original ideas (no the best) : ###
-- [db_filament.cfg](./klipper_config/macros/helpers/db_filament.cfg)  (previously material.cfg) (filament management, store parameters et apply it: _eg. pressure_advance, extrude_factor..._ )
+- [DB_FILAMENT](./klipper_config/macros/db_settings/)  (previously material.cfg) (filament management, store parameters et apply it: _eg. pressure_advance, extrude_factor..._ )
 Those parameters are called from print_start, calibration macros, ...
 
 ### Recently added : ###

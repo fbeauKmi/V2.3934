@@ -5,7 +5,7 @@
  - [nozzle_wipe](./nozzle_wipe.cfg) : Clean the nozzle whith brass brush
  - [prime_line](./prime_line.cfg) : All is in the filename
  - [filament](./filament.cfg) : Load, unload, change during print, tip shaping
- - [db_filament](./db_filament.cfg) : Store datas about filaments (extrude_factor, pressure_advance, temperature, ...) 
+ - [db_filament](../db_settings/) : Store datas about filaments (extrude_factor, pressure_advance, temperature, ...) 
 
 ## Db_filament.cfg
 
