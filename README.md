@@ -16,7 +16,7 @@ For now the printer is almost stock except:
 - LGX lite with 2 part PCB
 - Filament runout sensor by Tircown
 
-![Voron 2.4 v2.3934](./Images/v2.3934.jpg)
+![Voron 2.4 v2.3934](./Images/v2.3934_20230624.jpg)
 
 DO NOT take this configuration for your printer without checking the configuration. As new features are frequently experimented, some macros can be difficult to extract and adapt to another printer. 
 
