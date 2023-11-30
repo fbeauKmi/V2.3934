@@ -48,7 +48,7 @@ Comments on printer.cfg link the authors or source of inspiration.
 Those parameters are called from print_start, calibration macros, ...
 
 ### Recently added : ###
-- [max_flow.cfg](./klipper_config/macros/calibration/max_flow.cfg) a macro to check max_flow with a filament_motion_sensor or ERCF
+- [max_flow.cfg](./klipper_config/macros/calibration/max_flow_calibrate.cfg) a macro to check max_flow ~~with a filament_motion_sensor or ERCF~~
 - Separate config file for hotends and extruders, add max_flow check for PRESSURE_NOZZLE and PRIME_LINE
 - [chamber.cfg](./klipper_config/macros/heating/chamber.cfg)
 Wait chamber to reach target temperature. Async mode
