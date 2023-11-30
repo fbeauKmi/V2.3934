@@ -255,7 +255,7 @@ module pattern_interpolate_lines(size1, size2, line_width, nb_lines=1){
                 [cos(a)*(l+hw),sin(a)*(l+hw)]];
             
      
-        difference(){
+        rotate(30) difference(){
             polygon(points=d2);
             polygon(points=d1);
         }
