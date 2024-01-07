@@ -2,6 +2,8 @@
 
 This mod was designed to remove Z-chain by a Z umbilical. [another umbilical toolhead](../another_toolhead_umbilical/) is required for this mod. TH umbilical is used as guide for Z 
 
+This is still a draft, use it with care and feel free to contact me for any error or omission.
+
 ![No Z chain](./images/VORON2.4_Assembly_NOCHAIN_b.png)
 
 ## Is there any benefits with this mod ?
