@@ -2,9 +2,9 @@
 
 Here's the second version of my umbilical mount. This version was designed in collaboration with __@stephzic__.
 
-| ![previous_version](./images/20230203_115012.jpg) |                 ![in_dev](images/bowden_holder.jpg)                 |
-| :-----------------------------------------------: | :-----------------------------------------------------------------: |
-|         _This is the previous version ^^_         | _Current version during developpement<br>Courtesy of **@stephzic**_ |
+| ![previous_version](./images/20230203_115012.jpg) | 
+| :-----------------------------------------------: | 
+|         _This is the previous version ^^_         |
 
 ## How does it differ from the mount on the A motor?
 Initially, this design was not intended for CANbus, but a 16-wire cable. However, a CAN cable can be used perfectly well. The 2 parts of the mount hold the cable taut between the top and bottom extrusions. The cable then enters the electrical cabinet next to the Z chain. 
