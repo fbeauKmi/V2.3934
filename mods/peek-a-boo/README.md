@@ -36,19 +36,19 @@
 ## 
 
 [^1]: the following proposals are pending:
-- @frenesik V2.3769 /ban_request
-- a pull-out display
-- a fold-away display
-- a retractable display
-- a FPC display ?
-- la réponse 5 (the fifth answer)
-- reserved to @elpopo V2.643.1047.3097 
-- a pop-up display
-- a sliding monitor shelf
-- Super Slider
-- Draw Where 
-- Where is my screen (WIMS)
-- Where is The Screen (WITS)
-- The Invisible Screen
-- Screen Nothing
-- Demande au Chat si GPT (ask to Chat if GPT : does not work in english)
+    - @frenesik V2.3769 /ban_request
+    - a pull-out display
+    - a fold-away display
+    - a retractable display
+    - a FPC display ?
+    - la réponse 5 (the fifth answer)
+    - reserved to @elpopo V2.643.1047.3097 
+    - a pop-up display
+    - a sliding monitor shelf
+    - Super Slider
+    - Draw Where 
+    - Where is my screen (WIMS)
+    - Where is The Screen (WITS)
+    - The Invisible Screen
+    - Screen Nothing
+    - Demande au Chat si GPT (ask to Chat if GPT : does not work in english)
