@@ -31,6 +31,9 @@
 
 This mod was designed to be printed with ABS, taking in account shrinkage. I you use  other materials (ABS+, ASA, ..) you will need to adjust tolerances
 
+> [!TIP] 
+> The filenames prefixed ``\[fc\]`` for _filament change_. Print the 4 first layers with accent color then change to main color.   
+
 For ABS turn off Hole and shrinkage compensation in your slicer.
 Print settings same as Voron parts.
 
