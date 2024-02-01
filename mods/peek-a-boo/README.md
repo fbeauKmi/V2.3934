@@ -42,6 +42,7 @@ Most assembly is done by screw in plastic. Your printed parts need to be accurat
 - **Hardware :**  4 M3x10 SHCS
 
 Mount guide on the frame, M3x10 are screwed in ABS, DO NOT OVERTIGTHEN, otherwise you will need to reprint. 
+
 ![Alt text](./images/frame1.png)
 
 - **STLs :** _\[locker\]_
@@ -49,11 +50,13 @@ Mount guide on the frame, M3x10 are screwed in ABS, DO NOT OVERTIGTHEN, otherwis
   
 Fix locker with 2 M3x8 and 2 M3x12
 Insert 2 M3x8 in the frame, let about 2.5mm unscrewed, it will be used to fix the flat cable
+
 ![Alt text](./images/frame2.png)
 
 - **Hardware :** Microswitch D2F-5L, M2x10 selftapping screws
 
 See [backlight controller](./scripts/README.md) for wiring.
+
 ![Alt text](./images/frame3.png)
 
 - **Hardware :** 2 M3x20, 2 M3 T-nuts
@@ -67,12 +70,15 @@ Fix the frame assembly to the printer frame
 - **Hardware :** Waveshare 4.3" QLED DSI, DSI flat cable, 4 M2.5x5 screws, 4 M3x8 
 
 Prepare the flat cable, you need to fold it twice.
+
 ![flat_cable](./images/flatecable.png)
 
 Insert the cable into the slot, route the flat cable into the _bezel_back_ screws it to the display, 
+
 ![step1](./images/tray0.png)
 
 mount _bezel_front_ with M3x8
+
 ![step2](./images/tray1.png)
 
 - **STLs :** _\[bracket_L, bracket_C, bracket_R, arm\]_
@@ -97,6 +103,7 @@ mount _bezel_front_ with M3x8
 ![Alt text](./images/flatcable_holder.png)
 
 Put tray into frame assembly
+
 ![Alt text](./images/assy_1.png)
 ![Alt text](./images/assy2.png)
 
