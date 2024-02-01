@@ -1,7 +1,10 @@
 # Peek-a-Boo Display <br> an ``_undefined_``[^1] display mount for Waveshare 4.3" DSI
 
 > [!CAUTION]
-> This mod is still under development,  the documention and files in the repo are still subject to contain errors. 
+> This mod is still under development,  the documention and files in the repo are still subject to contain errors.
+
+> [!WARNING]
+> **This mount needs 90mm free space behind the skirt. Make sure you have enough space so as not to collide with the electal hardware**  
 
 ![peek-a-boo](./images/peek-a-boo.gif)  
 
