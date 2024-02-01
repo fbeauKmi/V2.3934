@@ -4,7 +4,7 @@
 > This mod is still under development,  the documention and files in the repo are still subject to contain errors.
 
 > [!WARNING]
-> **This mount needs 90mm free space behind the skirt. Make sure you have enough space so as not to collide with the electal hardware**  
+> **This mount needs 90mm free space behind the skirt. Make sure you have enough space so as not to collide with the electrical hardware**  
 
 ![peek-a-boo](./images/peek-a-boo.gif)  
 
@@ -29,15 +29,16 @@
 
 ## Printed parts
 
-This mod was designed to be printed with ABS, taking in account shrinkage. I you use  other materials (ABS+, ASA, ..) you will need to adjust tolerances
+All parts are designed to be printed with ABS, taking in account shrinkage. I you use  other materials (ABS+, ASA, ..) you will need to adjust your tolerances
 
 > [!TIP] 
 > The filenames prefixed ``\[fc\]`` for _filament change_. Print the 4 first layers with accent color then change to main color.   
 
 For ABS turn off Hole and shrinkage compensation in your slicer.
-Print settings same as Voron parts.
 
-Most assembly is done by screw in plastic. Your printed parts need to be accurate. First print  _guide\_L.stl_ and _bracket\_L.stl_ to adjust your tolerance. Parts should slide smoothly, with not much play.
+The print settings are the same as Voron parts.
+
+Most assemblies are done by screw-in-plastic. Your printed parts need to be accurate. First, print  _guide\_L.stl_ and _bracket\_L.stl_ to adjust your tolerance. Parts should slide smoothly, with not much play.
 
 > [!WARNING]
 > Check your parts before assembly, even slight warping is not acceptable.
@@ -113,6 +114,9 @@ Put tray into frame assembly
 ![Alt text](./images/assy_1.png)
 ![Alt text](./images/assy2.png)
 
+## Lubrication
+
+... Todo ...
 
 ## Configuration of backlight Controller
  In order to turn on and off backlight, you need to install a service. See related [Readme.md](./scripts/)
@@ -122,7 +126,6 @@ Put tray into frame assembly
  Special thanks to the french Voron community.
  Thanks to @Falcon14141 for "Peek-a-boo", that's a great name for this one. 
 
-## 
 
 [^1]: Thanks to #honhonhonbaguette, the Voron discord chan for the following proposals, without consensus all will remain pending :
     - @frenesik V2.3769 /ban_request
