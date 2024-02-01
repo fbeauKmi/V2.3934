@@ -50,7 +50,7 @@ Most assemblies are done by screw-in-plastic. Your printed parts need to be accu
 
 Mount guide on the frame, M3x10 are screwed in ABS, DO NOT OVERTIGTHEN, otherwise you will need to reprint. 
 
-![Alt text](./images/frame1.png)
+![frame assy](./images/frame1.png)
 
 - **STLs :** _\[locker\]_
 - **Hardware :** 4 M3x8, 2 M3x12 
@@ -58,19 +58,19 @@ Mount guide on the frame, M3x10 are screwed in ABS, DO NOT OVERTIGTHEN, otherwis
 Fix locker with 2 M3x8 and 2 M3x12
 Insert 2 M3x8 in the frame, let about 2.5mm unscrewed, it will be used to fix the flat cable
 
-![Alt text](./images/frame2.png)
+![attach locker](./images/frame2.png)
 
 - **Hardware :** Microswitch D2F-5L, M2x10 selftapping screws
 
 See [backlight controller](./scripts/README.md) for wiring.
 
-![Alt text](./images/frame3.png)
+![fic microswitch](./images/frame3.png)
 
 - **Hardware :** 2 M3x20, 2 M3 T-nuts
 
 Fix the frame assembly to the printer frame
 
-![Alt text](./images/frame4.png)
+![attach to printer](./images/frame4.png)
 
 ### Tray assembly
 - **STLs :** _\[bezel_back, bezel_front\]_
@@ -91,32 +91,42 @@ mount _bezel_front_ with M3x8
 - **STLs :** _\[bracket_L, bracket_C, bracket_R, arm\]_
 - **Hardware :** 2 N52 magnets, 2 M3x8, 2 M3x12, M3 Square nuts 
 
-![Alt text](./images/bracket1.png)
-![Alt text](./images/bracket2.png)
+![bracket assy top](./images/bracket1.png)
+![bracket assy bottom](./images/bracket2.png)
 
 - **Hardware :** 2 M3x10
 
-![Alt text](./images/tray_assy1.png)
+![tray assy](./images/tray_assy1.png)
 
 - **STLs :** _\[central_skirt\]_
 - **Hardware :** 2 N52 magnets, 2 M3 heat inserts, 1 M3x10, 1 M3x8, 1 extension spring
 
-![Alt text](./images/skirt.png)
-![Alt text](./images/tray_assy2.png)
+![central skirt](./images/skirt.png)
+![attach spring](./images/tray_assy2.png)
 
 - **STLs :** _\[flat_cable\]_
 - **Hardware :** 2 M3x16
-  
-![Alt text](./images/flatcable_holder.png)
+
+> [!TIP]
+> You have to adjust the position of the flat_cable holder while tray is closed 
+
+![insert flat cable holder](./images/flatcable_holder.png)
 
 Put tray into frame assembly
 
-![Alt text](./images/assy_1.png)
-![Alt text](./images/assy2.png)
+![final assy](./images/assy_1.png)
+
+Time to adjust flatcable position
+
+![secure flat cable](./images/assy2.png)
+
+Close the tray and screw a M3x10, this one is to adjust to trigger the microswitch when the tray is open
+
+![alt text](./images/switch_trigger.png)
 
 ## Lubrication
 
-... Todo ...
+Add a little bit of lubricant in guides and locker to ensure that parts slide smoothly 
 
 ## Configuration of backlight Controller
  In order to turn on and off backlight, you need to install a service. See related [Readme.md](./scripts/)
