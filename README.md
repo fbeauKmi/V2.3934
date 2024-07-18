@@ -15,6 +15,8 @@ For now the printer is not stock anymore:
 - [LFZI](https://github.com/falcon14141/Voron_Mods/tree/master/Lovely%20Frog%20Z%20Idler) 
 - NoCan umbilical / No Z chain
 - Stealthmax filter
+- BFI M3
+- 5mm panel + solar film
 
 
 
@@ -47,8 +49,9 @@ PRINT_START SIZE={first_layer_print_min[0]}_{first_layer_print_min[1]}_{first_la
 Comments on printer.cfg link the authors or source of inspiration.  
 
 ### Original ideas (no the best) : ###
-- [DB_FILAMENT](./klipper_config/macros/db_settings/)  (previously material.cfg) (filament management, store parameters et apply it: _eg. pressure_advance, extrude_factor..._ )
-Those parameters are called from print_start, calibration macros, ...
+- ~~[DB_FILAMENT](./klipper_config/macros/db_settings/)  (previously material.cfg) (filament management, store parameters et apply it: _eg. pressure_advance, extrude_factor..._ )
+Those parameters are called from print_start, calibration macros, ...~~
+DB_FILAMENT is outdated, I use [KBobine](https://github.com/fbeauKmi/kbobine_filament_settings) instead.
 
 ### Recently added : ###
 - [max_flow.cfg](./klipper_config/macros/calibration/max_flow_calibrate.cfg) a macro to check max_flow ~~with a filament_motion_sensor or ERCF~~
@@ -68,6 +71,8 @@ Original idea came from French channel on Discord Voron Design.
 ## [Mods for V2.4](./mods)
 
 A collection of mods that I design or adapt to my printer
+
+
 - [Fan_grid](./mods/fan_grid/) : (parametric) more secure fan grid for Voron 2.4 skirt
 - [Serial_plate](./mods/serial_plate) : Smaller serial plate for 2020 extrusion (no screws)
 - [Skin Stealthbuner](./mods/skin_stealthburner/) : Dual color face for Stealthburner (M600)
@@ -76,11 +81,13 @@ A collection of mods that I design or adapt to my printer
 - [Bambulab Toolhead for Stealthburner](./mods/bambulab_th_for_SB/)
 - [BME280 mount](./mods/bme280_extrusion_mount/)
 - [Rear panel vinyl cutout](./mods/backplate/)
-- [No Z chain]
 - [PUG](./mods/PUG/)
+- [Another toolhead umbilical](./mods/another_toolhead_umbilical/) for V2.4 
+- [No_Z_Chain](./mods/no_z_chain/) 
 - [SB cutter Jig](./mods/SB_cutter_jig/)
 - [Magnetic Door Hinge](./mods/magnetic_door_hinge/)
 - [Magnetic One Door Handle](./mods/magnetic_onedoor_handle/)
+- [Peek-a-boo](./mods/peek-a-boo/) Storable display mount for V2.4/trident 
 ## To do ##
 - Add more configuration macros
 
