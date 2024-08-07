@@ -11,7 +11,7 @@ parse_ini() {
 }
 
 # Read configuration
-CONFIG_FILE="backup.ini"
+CONFIG_FILE="$HOME/scripts/backup.ini"
 REMOTE_USER=$(parse_ini "$CONFIG_FILE" "Remote" "USER")
 REMOTE_HOST=$(parse_ini "$CONFIG_FILE" "Remote" "HOST")
 BACKUP_ROOT=$(parse_ini "$CONFIG_FILE" "Remote" "BACKUP_ROOT")
@@ -28,6 +28,11 @@ done < "$CONFIG_FILE"
 
 DATE=$(date +"%Y-%m-%d-%H%M%S")
 LATEST="$BACKUP_ROOT/latest"
+
+
+# Set up SSH agent
+eval $(ssh-agent -s)
+ssh-add $HOME/.ssh/id_rsa
 
 # Create backup directory and copy latest backup on remote
 ssh $REMOTE_USER@$REMOTE_HOST "
@@ -48,7 +53,8 @@ for SOURCE in "${SOURCES[@]}"; do
     else
         LINK_DEST_OPTION=""
     fi
-
+    
+    echo "Backup $LINK_DEST"
     rsync -avz --delete $LINK_DEST_OPTION \
         --exclude='.git' \
         --rsync-path=/usr/bin/rsync \
