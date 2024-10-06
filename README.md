@@ -6,12 +6,11 @@ For now the printer is not stock anymore:
 - Nozzle brush
 - 24v warm/cold leds for caselight
 - ~~rama pinned front idlers~~ BFI
-- XY pinned mod
-- GE5C Z-joint
-- Stealthburner
+- [XY pinned mod](https://github.com/hartk1213/MISC/tree/main/Voron%20Mods/Voron%202-Trident/2.4/Voron2.4_Trident_Pins_Mod)
+- ~~GE5C Z-joint~~ [Fixed Z jointq](https://github.com/bythorsthunder/Voron_Mods/tree/main/Fixed_2.4_Z_Joints)
 - X Y endstop relocation
-- LGX lite with 2 part PCB
-- Filament runout sensor by Tircown
+- LGX lite with 2 part PCB + belayed Mobius 4
+- [Filament runout sensor by Tircown](https://github.com/elpopo-eng/VoronFrenchUsers/tree/main/Mod/Filament_motion_sensor)
 - [LFZI](https://github.com/falcon14141/Voron_Mods/tree/master/Lovely%20Frog%20Z%20Idler) 
 - NoCan umbilical / No Z chain
 - Stealthmax filter
@@ -20,7 +19,7 @@ For now the printer is not stock anymore:
 
 
 
-![Voron 2.4 v2.3934](./Images/v2.3934_20230624.jpg)
+![Voron 2.4 v2.3934](./Images/v2.3934_20240924.jpg)
 
 > I don't publish full config anymore, only useful or original macros
 > that you need to adapt to your config.
@@ -70,26 +69,33 @@ Original idea came from French channel on Discord Voron Design.
 
 ## [Mods for V2.4](./mods)
 
-A collection of mods that I design or adapt to my printer
+A collection of mods I designed or adapted to my printer
 
-
+- [Another toolhead umbilical](./mods/another_toolhead_umbilical/) for V2.4
+- [Bambulab Toolhead for Stealthburner](./mods/bambulab_th_for_SB/)
+- [Belayed Mobius M4](./mods/belayed_mobius_extruder/)
+- [BME280 mount](./mods/bme280_extrusion_mount/)
+- [corner insulation for 2020 extrusion](./mods/corner_insulation/)
+- [Exhaust_cover](./mods/exhaust_cover/) : Cover plate for exhaust, I use it while printing ABS
 - [Fan_grid](./mods/fan_grid/) : (parametric) more secure fan grid for Voron 2.4 skirt
+- [Foldable cable path](./mods/foldable_cable_path/)
+- [Magnetic door hinge](./mods/magnetic_door_hinge/) : Parametric door hinge
+- [Magnetic One Door Handle](./mods/magnetic_onedoor_handle/)
+- [No_Z_Chain](./mods/no_z_chain/)
+- [Nozzle cleaner and bucket](./mods/nozzle_cleaner/)
+- [Peek-a-boo](./mods/peek-a-boo/) Storable display mount for V2.4/trident
+- [PiPlate for Waveshare CM4 Base](./mods/piplate_WS_CM4_base/)
+- [PUG](./mods/PUG/)
+- [Rear panel vinyl cutout](./mods/backplate/)
+- [SB cutter Jig](./mods/SB_cutter_jig/)
 - [Serial_plate](./mods/serial_plate) : Smaller serial plate for 2020 extrusion (no screws)
 - [Skin Stealthbuner](./mods/skin_stealthburner/) : Dual color face for Stealthburner (M600)
-- [Exhaust_cover](./mods/exhaust_cover/) : Cover plate for exhaust, I use it while printing ABS
-- [Magnetic door hinge](./mods/magnetic_door_hinge/) : Parametric door hinge
-- [Bambulab Toolhead for Stealthburner](./mods/bambulab_th_for_SB/)
-- [BME280 mount](./mods/bme280_extrusion_mount/)
-- [Rear panel vinyl cutout](./mods/backplate/)
-- [PUG](./mods/PUG/)
-- [Another toolhead umbilical](./mods/another_toolhead_umbilical/) for V2.4 
-- [No_Z_Chain](./mods/no_z_chain/) 
-- [SB cutter Jig](./mods/SB_cutter_jig/)
-- [Magnetic Door Hinge](./mods/magnetic_door_hinge/)
-- [Magnetic One Door Handle](./mods/magnetic_onedoor_handle/)
-- [Peek-a-boo](./mods/peek-a-boo/) Storable display mount for V2.4/trident 
-## To do ##
-- Add more configuration macros
+- [Spool roller](./mods/spool_roller/)
+- [Stealthmax bownden side entry and intake mod](./mods/stealthmax_mods/)
+
+
+
+## Acknowledgements
 
 Many thanks to the voron french community #honhonbaguette.
 
