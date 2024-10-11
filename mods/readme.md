@@ -1,8 +1,25 @@
-# Mod used on my V2.4 # 
+# Mods designed for my V2.4 # 
 
-- [fan_grid](./fan_grid/) : (parametric) more secure fan grid for Voron 2.4 skirt
-- [serial_plate](./serial_plate) : Smaller serial plate for 2020 extrusion (no screws)
-- [skin Stealthbuner](./skin_stealthburner/) : Dual color face for Stealthburner (M600)
-- [exhaust_cover](./exhaust_cover/) : Cover plate for exhaust, I use it while printing ABS
-- [Magnetic door hinge](./magnetic_door_hinge/) : Parametric door hinge
-- [Bambulab Toolhead for Stealthburner](./bambulab_th_for_SB/)
+- [Another toolhead umbilical](./mods/another_toolhead_umbilical/) for V2.4
+- [Bambulab Toolhead for Stealthburner](./mods/bambulab_th_for_SB/)
+- [Belayed Mobius M4](./mods/belayed_mobius_extruder/)
+- [BME280 mount](./mods/bme280_extrusion_mount/)
+- [Corner insulation for 2020 extrusion](./mods/corner_insulation/)
+- [Exhaust_cover](./mods/exhaust_cover/) : Cover plate for exhaust, I use it while printing ABS
+- [Fan_grid](./mods/fan_grid/) : (parametric) more secure fan grid for Voron 2.4 skirt
+- [Foldable cable path](./mods/foldable_cable_path/)
+- [Magnetic door hinge](./mods/magnetic_door_hinge/) : Parametric door hinge
+- [Magnetic One Door Handle](./mods/magnetic_onedoor_handle/)
+- [No_Z_Chain](./mods/no_z_chain/)
+- [Nozzle cleaner and bucket](./mods/nozzle_cleaner/)
+- [Optotap filament sensors](./mods/optotap_filament_sensor/)
+- [Parametric extrusion mount](./mods/parametric_extrusion_mount/)
+- [Peek-a-boo](./mods/peek-a-boo/) Storable display mount for V2.4/trident
+- [PiPlate for Waveshare CM4 Base](./mods/piplate_WS_CM4_base/)
+- [PUG](./mods/PUG/)
+- [Rear panel vinyl cutout](./mods/backplate/)
+- [SB cutter Jig](./mods/SB_cutter_jig/)
+- [Serial_plate](./mods/serial_plate) : Smaller serial plate for 2020 extrusion (no screws)
+- [Skin Stealthburner](./mods/skin_stealthburner/) : Dual color face for Stealthburner (M600)
+- [Spool roller](./mods/spool_roller/)
+- [Stealthmax bowden side entry and intake mod](./mods/stealthmax_mods/)

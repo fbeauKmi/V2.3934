@@ -69,34 +69,9 @@ Why quadratic ? Because convolution factors are quite easy to compute. I also tr
 It's asynchronous macro. that let you interact with printer during soak (even interrupt manualy bed soak) when called from a file.
 Original idea came from French channel on Discord Voron Design. 
 
-## [Mods for V2.4](./mods)
+## Mods for V2.4
 
-A collection of mods I designed or adapted to my printer
-
-- [Another toolhead umbilical](./mods/another_toolhead_umbilical/) for V2.4
-- [Bambulab Toolhead for Stealthburner](./mods/bambulab_th_for_SB/)
-- [Belayed Mobius M4](./mods/belayed_mobius_extruder/)
-- [BME280 mount](./mods/bme280_extrusion_mount/)
-- [Corner insulation for 2020 extrusion](./mods/corner_insulation/)
-- [Exhaust_cover](./mods/exhaust_cover/) : Cover plate for exhaust, I use it while printing ABS
-- [Fan_grid](./mods/fan_grid/) : (parametric) more secure fan grid for Voron 2.4 skirt
-- [Foldable cable path](./mods/foldable_cable_path/)
-- [Magnetic door hinge](./mods/magnetic_door_hinge/) : Parametric door hinge
-- [Magnetic One Door Handle](./mods/magnetic_onedoor_handle/)
-- [No_Z_Chain](./mods/no_z_chain/)
-- [Nozzle cleaner and bucket](./mods/nozzle_cleaner/)
-- [Parametric extrusion mount](./mods/parametric_extrusion_mount/)
-- [Peek-a-boo](./mods/peek-a-boo/) Storable display mount for V2.4/trident
-- [PiPlate for Waveshare CM4 Base](./mods/piplate_WS_CM4_base/)
-- [PUG](./mods/PUG/)
-- [Rear panel vinyl cutout](./mods/backplate/)
-- [SB cutter Jig](./mods/SB_cutter_jig/)
-- [Serial_plate](./mods/serial_plate) : Smaller serial plate for 2020 extrusion (no screws)
-- [Skin Stealthburner](./mods/skin_stealthburner/) : Dual color face for Stealthburner (M600)
-- [Spool roller](./mods/spool_roller/)
-- [Stealthmax bowden side entry and intake mod](./mods/stealthmax_mods/)
-
-
+A [collection of mods](./mods/) I designed or adapted to my printer
 
 ## Acknowledgements
 
