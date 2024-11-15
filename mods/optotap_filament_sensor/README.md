@@ -9,18 +9,19 @@ This mod combines a ``filament switch sensor`` and a ``filament motion sensor``.
 
 ## Bill of materials 
 
-| Hardware                              |  qty | Notes                                               |
-| :------------------------------------ | ---: | --------------------------------------------------- |
+| Hardware                              |  qty | Notes                                                    |
+| :------------------------------------ | ---: | -------------------------------------------------------- |
 | Optotap PCB 5v or 24 V                |    1 |
-| pin D3 20mm                           |    1 | e.g : 3.0x20mm BMG kit shaft                       |
-| EPDM rubber O-ring #5 (5.7mm x 1.9mm) |    2 | Any OD10mm CS2mm should work, ! EPDM  not Silicon     |
+| pin D3 20mm                           |    1 | e.g : 3.0x20mm BMG kit shaft                             |
+| 623zz bearing 3x10x4 mm               |    1 |
+| EPDM rubber O-ring #5 (5.7mm x 1.9mm) |    2 | Any OD10mm CS2mm should work, ! EPDM  not Silicon        |
 | M3 x 8 BHCS                           |    2 |
-| M3 x 10 BHCS                          |    1 | M3 x 16 if you wan't to screw it to the frame |
-| Pushfit collet                        |    2 | bondtech, UM2 or ECAS04                             |
+| M3 x 10 BHCS                          |    1 | M3 x 16 if you wan't to screw it to the frame            |
+| Pushfit collet                        |    2 | bondtech, UM2 or ECAS04                                  |
 | D2F microswith                        |    1 |
 | M2 x 10 self tapping screw            |    2 |
 | JST-PH 2P header                      |    1 |
-| Isopropylic Alcohol (IPA)                  |      | ! Important : Clean o-rings with IPA to give enough grip |
+| Isopropylic Alcohol (IPA)             |      | ! Important : Clean o-rings with IPA to give enough grip |
 
 ## Print parts
 
