@@ -41,7 +41,7 @@ Some are inspired by : Falcon14141, elpopo_eng, Ette
 - ~~[print_start.cfg](./klipper_config/macros/print_base/print_start.cfg) : A two part print_start that let you interact with printer during heat soak (turn light on, homing, load filament ...)~~
 - Well, two part print_start was a nice experiment BUT IT WAS A BAD IDEA !! As long as you put QGL, BED_MESH , wathever in a delayed gcode, errors will not be triggered in the same queue. When an error occurs printer will just abord Delayed_gcode an will continue on virtual_sdcard.
 
-Workaround : Separate warmup actions and motion actions. Use an interactive PRINTER_WARMUP (containing BEDSOAK, CHAMBERSOAK, EXTRUDER_PREHEAT ), then call the non interactive PRINT_START.  I use these line in SuperSlicer start g-code
+Workaround : Separate warmup actions and motion actions. Use an interactive PRINTER_WARMUP (containing BEDSOAK, CHAMBERSOAK, EXTRUDER_PREHEAT or use adpative [HEATSOAK](./klipper_config/macros/hardware_functions/heating/heatsoak.cfg) ), then call the non interactive PRINT_START.  I use these line in SuperSlicer start g-code
 ```
 PRINTER_WARMUP
 PRINT_START SIZE={first_layer_print_min[0]}_{first_layer_print_min[1]}_{first_layer_print_max[0]}_{first_layer_print_max[1]}
@@ -55,7 +55,7 @@ Those parameters are called from print_start, calibration macros, ...~~
 DB_FILAMENT is outdated, I use [KBobine](https://github.com/fbeauKmi/kbobine_filament_settings) instead.
 
 ### Recently added : ###
-- ~~[max_flow.cfg](./klipper_config/macros/calibration/max_flow_calibrate.cfg) a macro to check max_flow ~~with a filament_motion_sensor or ERCF~~~~ **Deprecated**, I use a klipper module [max_flow.py](https://github.com/fbeauKmi/kbobine_filament_settings/tree/develop/klipper/klippy/plugins) instead.I doesn't need slicer trick as previously.
+- ~~[max_flow.cfg](./klipper_config/macros/calibration/max_flow_calibrate.cfg) a macro to check max_flow ~~with a filament_motion_sensor or ERCF~~~~ **Deprecated**, I use a klipper module [max_flow.py](https://github.com/fbeauKmi/kbobine_filament_settings/tree/develop/klipper/klippy/plugins) instead. It doesn't need slicer trick as previously.
 - Separate config file for hotends and extruders, add max_flow check for PRESSURE_NOZZLE and PRIME_LINE
 - ~~[chamber.cfg](./klipper_config/macros/heating/chamber.cfg)
 Wait chamber to reach target temperature. Async mode~~
