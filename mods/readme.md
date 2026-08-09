@@ -17,7 +17,7 @@
 - [Peek-a-boo](./mods/peek-a-boo/) Storable display mount for V2.4/trident
 - [PiPlate for Waveshare CM4 Base](./mods/piplate_WS_CM4_base/)
 - [PUG](./mods/PUG/)
-- [Rear panel vinyl cutout](./mods/backplate/)
+- [Rear panel vinyl cutout](./mods/backpanel_sticker)
 - [SB cutter Jig](./mods/SB_cutter_jig/)
 - [Serial_plate](./mods/serial_plate) : Smaller serial plate for 2020 extrusion (no screws)
 - [Skin Stealthburner](./mods/skin_stealthburner/) : Dual color face for Stealthburner (M600)
