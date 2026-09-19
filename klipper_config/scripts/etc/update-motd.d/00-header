@@ -1,0 +1,21 @@
+#!/bin/sh
+logo_0="   __  __  "
+logo_1="  / / / /  "
+logo_2=" /_/ / / __"
+logo_3="    / / / /"
+logo_4="   /_/ /_/ "
+
+if type figlet > /dev/null 2>&1; then
+figlet=`figlet -f smslant " $(hostname)"`
+else
+figlet=" $(hostname)"
+fi
+
+echo -n "\033[0;32m"
+i=0
+echo "$figlet" | while IFS= read -r line; do
+    logo_line=$(eval "echo \"\$logo_$i\"")
+    i=$((i + 1))
+   echo "$logo_line $line   $logo_line"
+done
+echo "\033[0m"
